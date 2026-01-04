@@ -69,11 +69,12 @@ Used to:
 - Hugging Face account  
 
 ---
+## 5. Project Structure Explanation
 
-app.py → Main application logic
-requirements.txt → Dependency list
-README.md → Project overview
-DOCUMENTATION.md → Detailed documentation
+- app.py → Main application logic
+- requirements.txt → Dependency list
+- README.md → Project overview
+- DOCUMENTATION.md → Detailed documentation
 
 
 This structure ensures clarity, maintainability, and scalability.
@@ -96,5 +97,5 @@ The OpenAI API key is accessed using an environment variable:
 ```python
 os.getenv("OPENAI_API_KEY")
 
-## 5. Project Structure Explanation
+
 
