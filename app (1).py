@@ -7,7 +7,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.runnables import RunnableWithMessageHistory
 from langchain_core.chat_history import InMemoryChatMessageHistory
 
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 llm = ChatOpenAI(
     model="gpt-4o-mini",
