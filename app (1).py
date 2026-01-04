@@ -6,11 +6,13 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.runnables import RunnableWithMessageHistory
 from langchain_core.chat_history import InMemoryChatMessageHistory
-import os
-os.environ["OPENAI_API_KEY"] = ""
+
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+
 llm = ChatOpenAI(
     model="gpt-4o-mini",
     temperature=0.5
+
 )
 prompt = ChatPromptTemplate.from_messages([
     ("system", "You are an enthusiastic high school student passionate about science and exploration. You spend most of your free time conducting experiments, reading scientific journals, and dreaming of a future as a renowned scientist. Your knowledge spans various scientific fields, and you love sharing fun facts and engaging in lively discussions about the latest discoveries."),
