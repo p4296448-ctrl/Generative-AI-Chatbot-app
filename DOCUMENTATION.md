@@ -1,72 +1,100 @@
-# 📘 Generative AI Chatbot – Complete & Explainable Documentation
+
+# 📘 Generative AI Chatbot – Complete Project Documentation
 
 ---
 
 ## 1. Introduction
 
-This documentation explains the complete process of creating, running, and publishing a **Generative AI Chatbot** using modern AI tools.  
-The chatbot can hold conversations, remember previous messages, and respond intelligently through a web interface.
+This document provides a complete explanation of the **Generative AI Chatbot** project.  
+The chatbot is designed to engage users in meaningful conversations while maintaining context across multiple interactions.
 
-The project is implemented using **Python**, **LangChain**, **Gradio**, and **OpenAI’s GPT model**, and is published on **GitHub** for sharing and reuse.
-
----
-
-## 2. Objective of the Project
-
-The main objectives of this project are:
-
-- To understand how Large Language Models (LLMs) work  
-- To build a conversational AI chatbot  
-- To implement conversational memory  
-- To create a web-based chat interface  
-- To publish the project on GitHub in a professional way  
+The project follows real-world AI application standards and is deployed as a web-based chatbot.
 
 ---
 
-## 3. Technologies and Tools Used
+## 2. Project Objective
 
-### 3.1 Python
-Python is used as the main programming language because of its simplicity and rich AI ecosystem.
+The objectives of this project are:
 
-### 3.2 OpenAI API
-The OpenAI API provides access to advanced language models.  
-This project uses the **gpt-4o-mini** model for fast and cost-effective responses.
+- To build a conversational AI chatbot using a Large Language Model  
+- To implement conversation memory for contextual responses  
+- To design a user-friendly web interface  
+- To securely manage API keys  
+- To publish and deploy the application using GitHub and Hugging Face  
 
-### 3.3 LangChain
-LangChain is used to:
-- Manage prompts
-- Handle chat history
-- Maintain conversational memory
-- Create reusable AI pipelines
+---
 
-### 3.4 Gradio
-Gradio is used to:
-- Build a clean chat UI
-- Display messages
-- Generate a public web link for the chatbot
+## 3. Technology Stack
 
-### 3.5 GitHub
-GitHub is used to:
-- Store the source code
-- Share the project publicly
-- Maintain version control
+### Python
+Used as the primary programming language.
+
+### OpenAI API
+Provides access to advanced language models.  
+This project uses **gpt-4o-mini** for efficient and cost-effective inference.
+
+### LangChain
+Used to manage:
+- Prompt templates
+- Chat history
+- Conversational memory
+- Runnable pipelines
+
+### Gradio
+Used to:
+- Build the chatbot UI
+- Handle user input and responses
+- Generate a public access URL
+
+### GitHub
+Used for:
+- Source code management
+- Version control
+- Collaboration
+
+### Hugging Face Spaces
+Used to:
+- Host and run the Gradio application
+- Securely manage API secrets
+- Automatically deploy from GitHub
 
 ---
 
 ## 4. System Requirements
 
-To run this project, the following are required:
-
 - Python 3.9 or above  
-- Active OpenAI API key  
 - Internet connection  
-- Google Colab or local system  
+- OpenAI API key  
+- GitHub account  
+- Hugging Face account  
 
 ---
 
-## 5. Project Folder Structure
+app.py → Main application logic
+requirements.txt → Dependency list
+README.md → Project overview
+DOCUMENTATION.md → Detailed documentation
 
-- app.py → Main chatbot application
-- requirements.txt → List of required libraries
-- README.md → Project overview for GitHub
-- DOCUMENTATION.md → Detailed project explanation
+
+This structure ensures clarity, maintainability, and scalability.
+
+---
+
+## 6. Chatbot Creation Process
+
+### Step 1: Dependency Installation
+
+All dependencies are listed in `requirements.txt`.  
+Hugging Face automatically installs these during deployment.
+
+---
+
+### Step 2: Secure API Key Handling
+
+The OpenAI API key is accessed using an environment variable:
+
+```python
+os.getenv("OPENAI_API_KEY")
+
+## 5. Project Structure Explanation
+
