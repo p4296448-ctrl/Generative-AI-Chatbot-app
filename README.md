@@ -1,21 +1,21 @@
-# 🤖 Generative AI Chatbot
+# Generative AI Chatbot
 
 A memory-enabled Generative AI chatbot built using **Gradio**, **LangChain**, and **OpenAI**.  
 The application provides interactive, context-aware conversations through a clean web interface.
 
 ---
 
-## ✨ Features
+## Features
 
-- 💬 Interactive chat interface using Gradio  
-- 🧠 Conversational memory with LangChain  
-- ⚡ Powered by OpenAI `gpt-4o-mini`  
-- 🔐 Secure API key handling using environment variables  
-- 🌍 Deployed using Hugging Face Spaces  
+- Interactive chat interface using Gradio  
+- Conversational memory with LangChain  
+- Powered by OpenAI `gpt-4o-mini`  
+- Secure API key handling using environment variables  
+- Deployed using Hugging Face Spaces  
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python  
 - Gradio  
@@ -26,7 +26,7 @@ The application provides interactive, context-aware conversations through a clea
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 - app.py
 - requirements.txt
@@ -35,8 +35,8 @@ The application provides interactive, context-aware conversations through a clea
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
-### 1️⃣ Install dependencies
+### Install dependencies
 ```bash
 pip install -r requirements.txt
